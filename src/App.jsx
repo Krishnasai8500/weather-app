@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_KEY = '5d172d1bd58388c118dcfc9d3bdef90f'; // <-- put your key here
+const API_KEY = import.meta.env.VITE_API_KEY;  // <-- put your key here
 
 function App() {
   const [city, setCity] = useState('');
